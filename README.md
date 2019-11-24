@@ -29,14 +29,14 @@ Other versions of software may or may not break the code.
 
 
 ### Step-by-step running the Game
-1. Download the files and put them all into one folder.
+1. Download the files and put them all into one folder
 2. Open a terminal of your choice:
     - Windows command line
     - Your IDE environment (e.g. 'Atom 1.41.0' with the 'platformio-ide-terminal 2.10.0' package, ...)
     - ...
-    - DO NOT USE python's IDLE (the game will run but the text output will look horrible since font styles wont be executed)
+    - DO NOT USE Python's IDLE (the game will run but the text output will look horrible since font styles won't be executed)
 3. Navigate to the game folder
-4. run 'main.py'
+4. Run 'main.py'
 5. Play the game
 
 
@@ -90,7 +90,7 @@ These are explained here.
 - Player class          = Available classes the player can choose from to play in the game (e.g. Warrior, Thief, ...)
 - Player class object   = The code object that handles all statistics/attributes and functions of the player
 - Class                 = Either a synonym to "Player class" or a specific "Class object" that is a code representation and - should be self-explanatory through the context
-- Class object          = A code representation of a the pythonic 'class' data structure
+- Class object          = An instance of a defined class
 - Creature              = Any monster or other NPC inside the game including the player
 - Creature class object = Means player class objects AND NPC class objects
 - NPC                   = Any creature inside the game that is not the player (Non-Player Character)
@@ -181,7 +181,7 @@ in practice.
 - The Developer Notes section should include the command to call the specific script from the
   command line. Do not include the command for starting Python itself.
 
-- The In-file Readme should summarize the scripts purpose and address necessary long winded explanations.
+- The In-file Readme should summarize the scripts purpose and address necessary long-winded explanations.
   The Readme text has to be ordered into bullet points with dashes ("-").
 
 - All potential imports should be listed in the import section. All that not apply are commented out.
