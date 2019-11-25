@@ -31,7 +31,7 @@ Other versions of software may or may not break the code.
 ### Step-by-step running the Game
 You can run the game in two different ways:
 
-#### 1. Repl.it
+#### 1. Online on Repl.it
 1. Open the link https://repl.it/@CodeReviewage/LearningProjecttext-basedRPG
 2. Make sure you have the file 'main.py' selected
 3. Make sure line 8 and 9 of that script are not commented out
