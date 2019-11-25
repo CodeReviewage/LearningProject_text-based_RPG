@@ -2,6 +2,12 @@
 ##### Commands for the local terminal:
 # exec(open('main.py').read())
 
+#### The following 2 lines of code are necessary to force repl.it to install the
+#### right dependency. If you don't run the program on repl.it, comment the two
+#### lines out and ignore them.
+# import pip._internal as pip
+# pip.main(['install', 'py-rolldice'])
+
 
 ############################### In-file Readme #################################
 # - This is the entry script and is called from the command line to start the
