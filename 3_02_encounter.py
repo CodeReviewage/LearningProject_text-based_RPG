@@ -50,7 +50,7 @@ def createNPC_group(groupTemplate=[['random', 1]], faction=CONS_.monsterFaction,
                 NPC_type = random.choice(list(DB_.NPC_DB.keys()))
             # else:                                                              # Otherwise the input NPC type is the actual NPC type to be created
             #     NPC_type = NPC
-            newNPC = CC_.NPC(NPC_type, faction, affiliation, groupId)            # Create the NPC class object providing its intended type, the faction, affiliation and the group ID of the current group
+            newNPC = CC_.NPC(NPC_type, faction, affiliation, groupId, player)    # Create the NPC class object providing its intended type, the faction, affiliation, the group ID of the current group and the player class object (the latter is used for the checkPlayerControl() function)
             newNPC.combatName = (NPC_type.capitalize() + '_'                     # Form the combat name of the just created NPC object (type + group label + NPC number of the current type)
                                  + UFUN_.getGroupLabel() + '_' + str(i + 1))     # UFUN_.getGroupLabel() returns an uppercase letter that was not used to label groups yet; inserted in the combatName, it enables the player to distinguish to what group a NPC belongs and to prevent identical NPC combat names
             NPC_group.append(newNPC)                                             # Append the new NPC to the NPC group list that was created in the beginning
