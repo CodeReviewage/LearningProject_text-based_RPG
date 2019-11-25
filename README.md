@@ -29,6 +29,17 @@ Other versions of software may or may not break the code.
 
 
 ### Step-by-step running the Game
+You can run the game in two different ways:
+
+#### 1. Repl.it
+1. Open the link https://repl.it/@CodeReviewage/LearningProjecttext-basedRPG
+2. Make sure you have the file 'main.py' selected
+3. Make sure line 8 and 9 of that script are not commented out
+4. Click the green "run" button in the top-center
+5. Wait a minute for repl.it to install all dependencies
+6. Play the game
+
+#### 2. Locally on your machine
 1. Download the files and put them all into one folder
 2. Open a terminal of your choice:
     - Windows command line
