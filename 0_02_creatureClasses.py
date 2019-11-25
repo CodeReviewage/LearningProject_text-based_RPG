@@ -161,7 +161,7 @@ class Player:
 ##### Define NPC class
 class NPC:                                                                       # See Player Class for reference when trying to understand this class
     #### Define constructor
-    def __init__(self, NPC_type, faction, affiliation, groupId):
+    def __init__(self, NPC_type, faction, affiliation, groupId, player):
         ### Assign class attributes
         ## Get base stats from NPC type database
         self.NPC_stats = DB_.NPC_DB[NPC_type]
@@ -204,6 +204,14 @@ class NPC:                                                                      
 
     #### Define class functions
     ### General Functions
+    ## Check if this NPC is under player control and add to player group if so
+    def checkPlayerControl(self):
+        if self.affiliation == 'controlled':
+            player.playerGroup.append(self)
+            self.groupId = player.groupId
+        return
+
+        
     ## Output stats of interest for the player
     def printStats(self):                                                        # Output HP, armor, DMG, Initiative-roll and current gold
         msg = (f'HP: {self.currentHP}/{self.maxHP} | Armor: {self.baseArmor} | '
@@ -248,14 +256,6 @@ class NPC:                                                                      
 
 
     ### Class functions for future use (under construction!)
-    ## Check if this NPC is under player control and add to player group if so
-    # def checkPlayerControl(self):
-    #     if self.affiliation == 'controlled':
-    #         player.playerGroup.append(self)
-    #         self.groupId = player.groupId
-    #     return
-
-
     ## Chooses an action to perform in combat (not finished)
     # def chooseAction(self):
     #     possibleActions = []
